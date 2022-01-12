@@ -1,3 +1,6 @@
+# credits @Pocongonlen
+# t.me//PocongProject
+
 import os
 import requests
 import aiohttp
