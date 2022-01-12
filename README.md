@@ -56,8 +56,8 @@ Telegram bot to stream videos in telegram voicechat for both groups and channels
 
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/poocong/VidCall"> <img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy to Heroku"/></a></p>
 
-## Deploy to Railway
-<p align="center"><a href=https://github.com/subinps/VCPlayerBot/issues/7> <img src="https://img.shields.io/badge/Deploy%20To%20Railway-blueviolet?style=for-the-badge&logo=railway" width="200""/></a></p>
+
+
 
  
 ## Deploy to VPS
@@ -97,5 +97,5 @@ python3 main.py
 
 - [Laky-64](https://github.com/Laky-64) for [py-tgcalls](https://github.com/pytgcalls/pytgcalls)
 - [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
-- [Pocong](https://github.com/poocong) for [KANGER](https://github.com/poocong/Pocong-Userbot)
+- [Pocong](https://github.com/poocong) for [KANGER](https://github.com/poocong/PocongUserbot)
 
