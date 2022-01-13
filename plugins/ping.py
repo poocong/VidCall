@@ -12,16 +12,17 @@ from datetime import datetime
 
 @Client.on_message(filters.command('ping') & ~filters.private & ~filters.channel)
 async def ping(_, message):
+    start = datetime.now()
     total, used, free = shutil.disk_usage(".")
     total = humanbytes(total)
     used = humanbytes(used)
     free = humanbytes(free)
     cpu_usage = f"{psutil.cpu_percent()} %"
     ram_usage = f"{psutil.virtual_memory().percent} %"
-    start = datetime.now()
+    disk_usage = psutil.disk_usage('/').percent
     response = await message.reply_text(
         ">> Pong!"
     )
     end = datetime.now()
     resp = (end - start).microseconds / 1000
-    await response.edit_text(f"**Pong!**`⚡{resp} ms`\n\n<b><u>Music System Stats:</u></b>\nRAM:{ram_usage}\nCPU:{cpu_usage}\nUsed:{used}({disk_usage}")
+    await response.edit_text(f"**Pong!**`⚡{resp} ms`\n\n<b><u>Music System Stats:</u></b>\nRAM:{ram_usage}\nCPU:{cpu_usage}\nUsed:{used}({disk_usage}%)")
