@@ -19,7 +19,7 @@ Disk: {disk}%'''
     return stats
 
 
-@Client.on_message(filters.command(["ping", "pingTheLittleMusicPrivateBot"]))
+@Client.on_message(filters.command('ping') & ~filters.private & ~filters.channel)
 async def ping(_, message):
     uptime = await bot_sys_stats()
     start = datetime.now()
