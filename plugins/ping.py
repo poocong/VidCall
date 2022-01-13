@@ -12,13 +12,13 @@ from datetime import datetime
 
 @Client.on_message(filters.command('ping') & ~filters.private & ~filters.channel)
 async def ping(_, message):
-    start = datetime.now()
     total, used, free = shutil.disk_usage(".")
     total = humanbytes(total)
     used = humanbytes(used)
     free = humanbytes(free)
     cpu_usage = f"{psutil.cpu_percent()} %"
     ram_usage = f"{psutil.virtual_memory().percent} %"
+    start = datetime.now()
     response = await message.reply_text(
         ">> Pong!"
     )
