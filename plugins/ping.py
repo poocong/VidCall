@@ -24,9 +24,4 @@ async def ping(_, message):
     )
     end = datetime.now()
     resp = (end - start).microseconds / 1000
-    await response.edit_text(f"""**Pong!**`⚡{resp} ms`
-     
-<b><u>Music System Stats:</u></b>
-RAM:{ram_usage}
-CPU:{cpu_usage}
-Used:{used}({disk_usage}""")
+    await response.edit_text(f"**Pong!**`⚡{resp} ms`\n\n<b><u>Music System Stats:</u></b>\nRAM:{ram_usage}\nCPU:{cpu_usage}\nUsed:{used}({disk_usage}")
