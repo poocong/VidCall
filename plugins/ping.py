@@ -7,7 +7,7 @@ import time
 from datetime import datetime
 
 async def bot_sys_stats():
-    bot_uptime = int(time.time() - Music_START_TIME)
+    bot_uptime = int(time.time() - _START_TIME)
     cpu = psutil.cpu_percent(interval=0.5)
     mem = psutil.virtual_memory().percent
     disk = psutil.disk_usage("/").percent
