@@ -4,7 +4,6 @@ import os
 import psutil
 import time
 from datetime import datetime
-from utils.plugins.helpers.time import get_readable_time
 
 async def bot_sys_stats():
     bot_uptime = int(time.time() - Music_START_TIME)
