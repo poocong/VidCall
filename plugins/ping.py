@@ -1,6 +1,5 @@
 from pyrogram import filters, Client
 from pyrogram.types import Message
-from utils import app, SUDOERS, userplugins_START_TIME
 import os
 import psutil
 import time
